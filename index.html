@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Fast Fashion Store | Preview da Loja</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div class="container topbar-inner">
+      <a class="brand" href="#inicio">
+        <span class="brand-badge">FF</span>
+        <div>
+          <strong>Fast Fashion Store</strong>
+          <small>Loja própria • Venda direta</small>
+        </div>
+      </a>
+
+      <nav class="menu desktop-only">
+        <a href="#categorias">Categorias</a>
+        <a href="#destaques">Destaques</a>
+        <a href="#produtos">Produtos</a>
+        <a href="#beneficios">Benefícios</a>
+      </nav>
+
+      <div class="header-actions">
+        <button class="ghost-btn" id="openSearch">Buscar</button>
+        <button class="cart-btn" id="openCart">
+          Carrinho
+          <span id="cartCount">0</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="inicio">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <span class="tag">Loja preview em HTML</span>
+          <h1>Uma loja própria com cara de marca, pronta para vender direto e fugir das taxas altas.</h1>
+          <p>
+            Catálogo profissional, ofertas fortes, compra rápida por WhatsApp e checkout visual para você validar antes de publicar online.
+          </p>
+          <div class="hero-actions">
+            <a class="primary-btn" href="#produtos">Ver produtos</a>
+            <a class="secondary-btn" href="#beneficios">Como funciona</a>
+          </div>
+          <div class="hero-metrics">
+            <div><strong>10</strong><span>produtos exemplo</span></div>
+            <div><strong>4</strong><span>categorias</span></div>
+            <div><strong>100%</strong><span>adaptado para celular</span></div>
+          </div>
+        </div>
+        <div class="hero-card">
+          <div class="hero-card-top">
+            <span>Oferta em destaque</span>
+            <strong>Venda direta com maior margem</strong>
+          </div>
+          <img src="assets/vestido-plus-size.jpg" alt="Vestido plus size" />
+          <div class="hero-offer">
+            <p class="old-price">De R$ 149,90</p>
+            <div>
+              <strong>R$ 99,90</strong>
+              <span>ou 3x sem juros</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="benefit-strip">
+      <div class="container benefit-strip-inner">
+        <div>🚚 Envio rápido</div>
+        <div>🔒 Compra segura</div>
+        <div>💬 Atendimento no WhatsApp</div>
+        <div>💸 PIX com desconto</div>
+      </div>
+    </section>
+
+    <section class="section" id="categorias">
+      <div class="container">
+        <div class="section-header">
+          <div>
+            <span class="eyebrow">Categorias</span>
+            <h2>Organização clara para vender melhor</h2>
+          </div>
+          <p>Seus produtos já entram separados por segmento, facilitando navegação e campanhas.</p>
+        </div>
+        <div class="category-grid" id="categoryGrid"></div>
+      </div>
+    </section>
+
+    <section class="section muted" id="destaques">
+      <div class="container">
+        <div class="section-header">
+          <div>
+            <span class="eyebrow">Destaques</span>
+            <h2>Vitrines pensadas para converter</h2>
+          </div>
+          <p>Blocos promocionais para usar em tráfego pago, bio do Instagram, TikTok e WhatsApp.</p>
+        </div>
+        <div class="showcase-grid">
+          <article class="showcase-card large">
+            <div class="showcase-content">
+              <span class="pill">Moda íntima</span>
+              <h3>Mais conforto, sustentação e margem alta</h3>
+              <p>Ideal para ofertas fortes com criativo, prova visual e recompra.</p>
+            </div>
+            <img src="assets/sutia-demillus.jpg" alt="Sutiã DeMillus" />
+          </article>
+          <article class="showcase-card">
+            <div class="showcase-content">
+              <span class="pill">Moda feminina</span>
+              <h3>Peças visuais para anúncio</h3>
+            </div>
+            <img src="assets/macacao-pantalona.jpg" alt="Macacão pantalona" />
+          </article>
+          <article class="showcase-card">
+            <div class="showcase-content">
+              <span class="pill">Casa & cozinha</span>
+              <h3>Kits com ticket médio maior</h3>
+            </div>
+            <img src="assets/kit-5-panelas.jpg" alt="Kit 5 panelas" />
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="produtos">
+      <div class="container">
+        <div class="section-header products-header">
+          <div>
+            <span class="eyebrow">Produtos exemplo</span>
+            <h2>Preview da sua loja pronta para venda direta</h2>
+          </div>
+          <div class="toolbar">
+            <div class="chips" id="filterChips"></div>
+            <input type="search" id="searchInput" placeholder="Buscar produto" />
+          </div>
+        </div>
+        <div class="product-grid" id="productGrid"></div>
+      </div>
+    </section>
+
+    <section class="section dark" id="beneficios">
+      <div class="container">
+        <div class="section-header light">
+          <div>
+            <span class="eyebrow">Por que essa loja converte</span>
+            <h2>Estrutura pensada para vender sem depender só de marketplace</h2>
+          </div>
+          <p>Você pode mandar tráfego direto para páginas com mais margem, mais controle e cliente próprio.</p>
+        </div>
+        <div class="benefits-grid">
+          <article>
+            <h3>Oferta clara</h3>
+            <p>Preço de destaque, desconto no PIX e CTA forte.</p>
+          </article>
+          <article>
+            <h3>Compra rápida</h3>
+            <p>Cliente pode fechar no WhatsApp sem atrito.</p>
+          </article>
+          <article>
+            <h3>Produto organizado</h3>
+            <p>Categorias prontas para campanha e remarketing.</p>
+          </article>
+          <article>
+            <h3>Layout profissional</h3>
+            <p>Visual de marca para passar confiança antes da compra.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <aside class="drawer" id="cartDrawer" aria-hidden="true">
+    <div class="drawer-header">
+      <div>
+        <strong>Seu carrinho</strong>
+        <small>Preview de compra</small>
+      </div>
+      <button class="icon-btn" id="closeCart">✕</button>
+    </div>
+    <div class="cart-items" id="cartItems"></div>
+    <div class="drawer-footer">
+      <div class="cart-total-row">
+        <span>Total</span>
+        <strong id="cartTotal">R$ 0,00</strong>
+      </div>
+      <button class="primary-btn full" id="checkoutBtn">Finalizar no WhatsApp</button>
+      <button class="secondary-btn full" id="pixBtn">Simular PIX</button>
+    </div>
+  </aside>
+
+  <div class="overlay" id="overlay"></div>
+
+  <div class="modal" id="searchModal" aria-hidden="true">
+    <div class="modal-card">
+      <div class="modal-top">
+        <strong>Busca rápida</strong>
+        <button class="icon-btn" id="closeSearch">✕</button>
+      </div>
+      <input type="search" id="searchModalInput" placeholder="Digite o nome do produto" />
+      <div id="searchResults" class="search-results"></div>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div>
+        <strong>Fast Fashion Store</strong>
+        <p>Preview em HTML para validação visual antes da publicação.</p>
+      </div>
+      <div class="footer-links">
+        <a href="#inicio">Topo</a>
+        <a href="#produtos">Produtos</a>
+        <a href="#beneficios">Benefícios</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
